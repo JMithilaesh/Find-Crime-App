@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Find Crime</string>
+    <string name="title_activity_maps">Find Crime</string>
+    <string name="felonies">Felonies</string>
+    <string name="misdemeanors">Misdemeanors</string>
+    <string name="infractions">Infractions</string>
+    <string name="all_crimes">All Crimes</string>
+    <string name="find">Find</string>
+    <string name="crime_incident_date">Crime Incident Date</string>
+</resources>

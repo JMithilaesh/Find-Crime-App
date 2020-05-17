@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="2"
+        app:rowCount="1">
+
+        <Button
+            android:id="@+id/Infractions"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:background="#F4825E"
+            android:fontFamily="@font/convergence"
+            android:onClick="changeMap"
+            android:text="@string/infractions"
+            android:textColor="#F8F0F0"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/AllCrimes"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:background="#CDDC39"
+            android:fontFamily="@font/convergence"
+            android:onClick="changeMap"
+            android:text="@string/all_crimes"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/Misdemeanors"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:background="#FB4106"
+            android:fontFamily="@font/convergence"
+            android:onClick="changeMap"
+            android:text="@string/misdemeanors"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/felonies"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:background="#F10606"
+            android:fontFamily="@font/convergence"
+            android:onClick="changeMap"
+            android:text="@string/felonies"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="436dp"
+        tools:context=".MapsActivity" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="414dp"
+            android:layout_height="match_parent"
+            android:background="#C1BDBD"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusedMonthDateColor="#D5CECE"
+            android:foreground="@android:color/darker_gray"
+            android:maxDate="31/12/2017"
+            android:minDate="01/01/2016" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</LinearLayout>
